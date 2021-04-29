@@ -67,24 +67,24 @@ index-events = []
 [telemetry]
 
 # Prefixed with keys to separate services.
-service-name = ""
+service-name = "swaptestnet"
 
 # Enabled enables the application telemetry functionality. When enabled,
 # an in-memory sink is also enabled by default. Operators may also enabled
 # other sinks such as Prometheus.
-enabled = false
+enabled = true
 
 # Enable prefixing gauge values with hostname.
-enable-hostname = false
+enable-hostname = true
 
 # Enable adding hostname to labels.
-enable-hostname-label = false
+enable-hostname-label = true
 
 # Enable adding service to labels.
-enable-service-label = false
+enable-service-label = true
 
 # PrometheusRetentionTime, when positive, enables a Prometheus metrics sink.
-prometheus-retention-time = 0
+prometheus-retention-time = 5
 
 # GlobalLabels defines a global set of name/value label tuples applied to all
 # metrics emitted using the wrapper functions defined in telemetry package.
@@ -92,6 +92,7 @@ prometheus-retention-time = 0
 # Example:
 # [["chain_id", "cosmoshub-1"]]
 global-labels = [
+["chain_id","swap-testnet-2004"]
 ]
 
 ###############################################################################
