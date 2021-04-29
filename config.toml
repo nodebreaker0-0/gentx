@@ -244,12 +244,12 @@ dial_timeout = "3s"
 #######################################################
 [mempool]
 
-recheck = false
+recheck = true
 broadcast = true
 wal_dir = ""
 
 # Maximum number of transactions in the mempool
-size = 50000
+size = 500
 
 # Limit the total size of all txs in the mempool.
 # This only accounts for raw transactions (e.g. given 1MB transactions and
