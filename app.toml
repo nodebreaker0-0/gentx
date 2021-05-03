@@ -8,7 +8,7 @@
 # The minimum gas prices a validator is willing to accept for processing a
 # transaction. A transaction's fees must meet the minimum of any denomination
 # specified in this config (e.g. 0.25token1;0.0001token2).
-minimum-gas-prices = ""
+minimum-gas-prices = "1.0uatom"
 
 # default: the last 100 states are kept in addition to every 500th state; pruning at 10 block intervals
 # nothing: all historic states will be saved, nothing will be deleted (i.e. archiving node)
@@ -67,7 +67,7 @@ index-events = []
 [telemetry]
 
 # Prefixed with keys to separate services.
-service-name = "swaptestnet"
+service-name = "competition-0001"
 
 # Enabled enables the application telemetry functionality. When enabled,
 # an in-memory sink is also enabled by default. Operators may also enabled
@@ -92,7 +92,7 @@ prometheus-retention-time = 5
 # Example:
 # [["chain_id", "cosmoshub-1"]]
 global-labels = [
-["chain_id","swap-testnet-2004"]
+["chain_id","competition-0001"]
 ]
 
 ###############################################################################
